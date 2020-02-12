@@ -18,21 +18,19 @@
 <div class="container">
     <div class="row">
         <div class="col-md-4 offset-md-4">
-            <div class="form-group">
-                <form style="margin-top: 10px;">
-                    <label for="value">Значение ($)</label>
-                    <input class="form-control bind" type="number" min="0" step="0.01" value="0" name="value">
-                    <label for="currency">Валюта</label>
-                    <select name="currency" class="form-control bind">
-                        <?php foreach($currencies as $key => $item): ?>
-                            <option value="<?=$key?>"><?=$item?></option>
-                        <?php endforeach; ?>
-                    </select>
-                   <br>
-                </form>
-                <div class="alert alert-dark" id="result" role="alert">
-                    0.00
-                </div>
+            <div class="form-group"><br>
+                <label for="value">Значение ($)</label>
+                <input class="form-control bind" type="number" min="0" step="0.01" value="0" name="value">
+                <label for="currency">Валюта</label>
+                <select name="currency" class="form-control bind">
+                    <?php foreach($currencies as $key => $item): ?>
+                        <option value="<?=$key?>"><?=$item?></option>
+                    <?php endforeach; ?>
+                </select>
+               <br>
+            <div class="alert alert-dark" id="result" role="alert">
+                0.00
+            </div>
             </div>
         </div>
     </div>
